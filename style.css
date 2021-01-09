@@ -1,0 +1,39 @@
+#mainDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mainCanvas {
+    margin: auto;
+}
+
+header {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.spinner {
+    animation: spinnerAnimation infinite linear 1s;
+    display: inline-block;
+    text-align: center;
+    font-style: unset;
+    font-weight: unset;
+}
+
+#leftSpinner{ 
+    animation-direction: reverse;
+}
+
+@keyframes spinnerAnimation {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(359deg)
+    }
+}
